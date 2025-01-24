@@ -7,10 +7,6 @@ import TeamSection from "../components/TeamSection";
 import Testimonials from "../components/Testimonials";
 
 
-
-
-
-
 export default function Home() {
   return (
     <div className="grid gap-10">
