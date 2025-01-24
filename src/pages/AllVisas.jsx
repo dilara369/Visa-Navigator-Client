@@ -24,7 +24,6 @@ const AllVisas = () => {
   const handleFilterChange = (e) => {
     setSelectedVisaType(e.target.value);
   };
-
   // Filter the visas based on selected visa type
   const filteredVisas = selectedVisaType
     ? allVisas.filter((visa) => visa.visaType === selectedVisaType)
@@ -35,7 +34,6 @@ const AllVisas = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
         All Visas
       </h2>
-      
       <div className="mb-8 flex justify-center">
         <select
           value={selectedVisaType}
