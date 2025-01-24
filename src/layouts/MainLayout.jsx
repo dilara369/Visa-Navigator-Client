@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 // import "react-toastify/dist/ReactToastify.css";
 // import { ToastContainer } from "react-toastify";
 
-
 export default function MainLayout() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-pink-100 via-blue-100 to-lime-100 dark:from-purple-900 dark:via-gray-800 dark:to-blue-900">
