@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-
 const Slider = () => {
   const slides = [
     {
