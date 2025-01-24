@@ -1,12 +1,9 @@
 import { useState } from "react";
-
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
   const faqs = [
     {
       question: "How does the loyalty program work?",
