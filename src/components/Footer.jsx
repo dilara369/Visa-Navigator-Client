@@ -1,6 +1,5 @@
 import { FaFacebook, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-t from-gray-100 via-blue-50 to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900 text-gray-800 dark:text-gray-200 py-10 mt-10">
@@ -31,7 +30,6 @@ const Footer = () => {
     </div>
   </div>
 
-  {/* Stay Connected */}
   <div className="text-center md:text-right">
     <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-300">
       Stay Connected
@@ -63,5 +61,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
