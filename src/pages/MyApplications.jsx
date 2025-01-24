@@ -11,7 +11,6 @@ const MyApplications = () => {
   const [filteredApplications, setFilteredApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState(""); 
-
   
   useEffect(() => {
     const fetchApplications = () => {
