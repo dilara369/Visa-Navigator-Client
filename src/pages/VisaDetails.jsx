@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../provider/AuthProvider";
-
 const VisaDetails = () => {
   const visa = useLoaderData();
     const { user } = useContext(AuthContext);
