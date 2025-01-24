@@ -112,7 +112,6 @@ export default function AddVisa() {
             required
           ></textarea>
         </div>
-
         {/* Adder Name */}
         <div>
           <label className="block text-lg font-medium text-blue-700 dark:text-blue-400 mb-2">
