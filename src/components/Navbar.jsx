@@ -1,12 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-
 const Navbar = () => {
   const { user, logoutUser } = useContext(AuthContext);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
  
-  // Apply theme classes
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -21,14 +19,14 @@ const Navbar = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  // Handle user logout
+
   const handleLogOut = () => {
     logoutUser()
       .then(() => console.log("User logged out!"))
       .catch((error) => console.log("Error during logout:", error.message));
   };
 
-  // Navigation links
+
   const links = (
     <ul className="menu flex flex-col lg:flex-row gap-4 text-lg">
       <li>
