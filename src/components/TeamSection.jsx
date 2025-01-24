@@ -1,6 +1,5 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import { Typewriter } from "react-simple-typewriter";
-
 const TeamSection = () => {
   const teamMembers = [
     {
@@ -55,7 +54,7 @@ const TeamSection = () => {
         </Fade>
       </div>
 
-      {/* Team Members Section */}
+     
       <Slide direction="up" cascade>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {teamMembers.map((member, index) => (
