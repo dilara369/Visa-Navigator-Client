@@ -14,7 +14,6 @@ import MyAddedVisas from "../pages/MyAddedVisas";
 import PrivetRoute from "./PrivetRoute";
 
 
-
 const router = createBrowserRouter([
   {
     path: "/",
