@@ -3,7 +3,6 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged,
 import auth from "../firebase/firebase.config";
 
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 
@@ -12,8 +11,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // console.log(user);
-//   console.log(loading);
+
   
 
   const registerUser = (email, password) => {
