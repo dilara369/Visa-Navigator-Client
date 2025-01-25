@@ -60,7 +60,7 @@ const MyApplications = () => {
       if (result.isConfirmed) {
         try {
           const response = await fetch(
-            `http://localhost:4800/visa-details/${visaId}`,
+            `https://visa-navigator-server-cyan.vercel.app/visa-details/${visaId}`,
             {
               method: "PUT",
               headers: { "Content-Type": "application/json" },

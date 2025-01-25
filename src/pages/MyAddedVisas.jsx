@@ -10,7 +10,7 @@ const MyAddedVisas = () => {
   const [selectedVisa, setSelectedVisa] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4800/all-visas")
+    fetch("https://visa-navigator-server-cyan.vercel.app/all-visas")
       .then((response) => response.json())
       .then((data) => {
         // filter visas based on user email
@@ -23,7 +23,7 @@ const MyAddedVisas = () => {
 
   const handleUpdate = (updatedVisa) => {
     fetch(
-      `http://localhost:4800/visa-update/${updatedVisa._id}`,
+      `https://visa-navigator-server-cyan.vercel.app/visa-update/${updatedVisa._id}`,
       {
         method: "PUT",
         headers: {
@@ -58,7 +58,7 @@ const MyAddedVisas = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `http://localhost:4800/visa-details/${id}`,
+          `https://visa-navigator-server-cyan.vercel.app/visa-details/${id}`,
           {
             method: "DELETE",
           }

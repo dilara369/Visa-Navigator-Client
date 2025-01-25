@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         path: "/all-visas",
         element: <AllVisas />,
         loader: () =>
-          fetch("http://localhost:4800/all-visas"),
+          fetch("https://visa-navigator-server-cyan.vercel.app/all-visas"),
       },
       {
         path: "/visa-details/:id",
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:4800/visa-details/${params.id}`
+            `https://visa-navigator-server-cyan.vercel.app/visa-details/${params.id}`
           ),
       },
       {
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: () =>
-          fetch("http://localhost:4800/all-visas"),
+          fetch("https://visa-navigator-server-cyan.vercel.app/all-visas"),
       },
       {
         path: "/my-applications",
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: () =>
-          fetch("http://localhost:4800/all-visas"),
+          fetch("https://visa-navigator-server-cyan.vercel.app/all-visas"),
       },
       {
         path: "/login",

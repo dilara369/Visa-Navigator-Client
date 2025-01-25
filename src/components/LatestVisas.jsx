@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const LatestVisas = () => {
   const [latestVisas, setLatestVisas] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4800/latest-visas?limit=6")
+    fetch("https://visa-navigator-server-cyan.vercel.app/latest-visas?limit=6")
       .then((res) => res.json())
       .then((data) => setLatestVisas(data))
       .catch((error) => console.error("Error fetching visas:", error));

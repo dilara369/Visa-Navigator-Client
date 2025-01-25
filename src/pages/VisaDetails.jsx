@@ -34,7 +34,7 @@ const VisaDetails = () => {
     };
 
     const response = await fetch(
-      `http://localhost:4800/visa-details/${visa._id}`,
+      `https://visa-navigator-server-cyan.vercel.app/visa-details/${visa._id}`,
       {
         method: "PUT",
         headers: {

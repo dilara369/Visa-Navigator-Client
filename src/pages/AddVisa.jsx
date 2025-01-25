@@ -23,7 +23,7 @@ export default function AddVisa() {
     }
 
     // Submit data to the server
-    fetch('http://localhost:4800/add-visa', {
+    fetch('https://visa-navigator-server-cyan.vercel.app/add-visa', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
