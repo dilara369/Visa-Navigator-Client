@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <Error />, // Error page for unmatched routes
+    // errorElement: <Error />, // Error page for unmatched routes
     children: [
       {
         path: "/",

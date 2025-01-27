@@ -24,34 +24,37 @@ const AllVisas = () => {
   const handleFilterChange = (e) => {
     setSelectedVisaType(e.target.value);
   };
+  console.log(selectedVisaType)
+  console.log(allVisas)
   // Filter the visas based on selected visa type
-  const filteredVisas = selectedVisaType
-  ? allVisas.filter((visa) =>
+  const filteredVisas = selectedVisaType ? allVisas.filter((visa) =>
       visa.Visa_type?.toLowerCase() === selectedVisaType.toLowerCase()
     )
   : allVisas;
-
     
   return (
     <div className="w-11/12 mx-auto p-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
         All Visas
       </h2>
-      <div className="mb-8 flex justify-center">
+<form onChange={handleFilterChange} action="">
+<div className="mb-8 flex justify-center">
         <select
-          value={selectedVisaType}
-          onChange={handleFilterChange}
+        name="catagory"
+      
+      
           className="p-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
         >
           <option value="" disabled>
             Select Visa Type
           </option>
-          <option value="Tourist Visa">Tourist Visa</option>
-          <option value="Student Visa">Student Visa</option>
-          <option value="Official Visa">Official Visa</option>
-          <option value="Work Visa">Work Visa</option>
+          <option value="Tourist">Tourist Visa</option>
+          <option value="Student">Student Visa</option>
+          <option value="Official">Official Visa</option>
+          <option value="Work">Work Visa</option>
         </select>
       </div>
+</form>
 
       {loading ? (
         // Show the Loading component when loading
