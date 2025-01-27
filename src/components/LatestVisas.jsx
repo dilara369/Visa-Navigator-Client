@@ -31,7 +31,7 @@ const LatestVisas = () => {
             {" "}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
               <img
-                src={visa.Country_name}
+                src={visa.Country_image}
                 alt={visa.Country_name}
                 className="w-full h-40 object-cover"
               />

@@ -127,7 +127,7 @@ const MyApplications = () => {
             {/* Country Image */}
             <div className="relative">
               <img
-                src={visa.countryImage}
+                src={visa.country_image}
                 alt={visa.Country_name}
                 className="h-40 w-full object-cover rounded-t-3xl"
               />
