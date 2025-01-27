@@ -26,7 +26,7 @@ const AllVisas = () => {
   };
   // Filter the visas based on selected visa type
   const filteredVisas = selectedVisaType
-    ? allVisas.filter((visa) => visa.visaType === selectedVisaType)
+    ? allVisas.filter((visa) => visa.Visa_type === selectedVisaType)
     : allVisas;
     
   return (

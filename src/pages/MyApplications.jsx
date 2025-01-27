@@ -114,7 +114,7 @@ const MyApplications = () => {
         Search
       </button>
     </div>
-  
+    
     {filteredApplications.length === 0 ? (
       <p className="text-center text-gray-500 dark:text-gray-400">No applications found.</p>
     ) : (
