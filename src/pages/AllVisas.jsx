@@ -26,8 +26,11 @@ const AllVisas = () => {
   };
   // Filter the visas based on selected visa type
   const filteredVisas = selectedVisaType
-    ? allVisas.filter((visa) => visa.Visa_type === selectedVisaType)
-    : allVisas;
+  ? allVisas.filter((visa) =>
+      visa.Visa_type?.toLowerCase() === selectedVisaType.toLowerCase()
+    )
+  : allVisas;
+
     
   return (
     <div className="w-11/12 mx-auto p-6">
